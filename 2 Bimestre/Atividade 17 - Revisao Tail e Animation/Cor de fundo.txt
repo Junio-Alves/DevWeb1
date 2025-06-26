@@ -1,0 +1,5 @@
+Cor de fundo:
+
+
+
+ background-image: radial-gradient(#7f3d9e, #6d00d9) ;

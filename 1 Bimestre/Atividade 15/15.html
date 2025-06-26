@@ -1,0 +1,124 @@
+<html>
+
+<head>
+    <title>Atividade 15</title>
+</head>
+
+<body style="margin-left: 7%;">
+    <font face="arial">
+        <font color="#213a63">
+            <h1>Aula Avançada: Tabelas HTML</h1>
+        </font>
+        <font color="#213a63">
+            <h2>1. Estrutura Completa de uma Tabela.</h2>
+        </font>
+        <h3>
+            <bold>Tabela de Vendas - Abril 2025</bold>
+        </h3>
+        <table border="1">
+            <tr>
+                <th scope="col">
+                    Produto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </th>
+                <th scope="col">
+                    Categoria&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </th>
+                <th scope="col">
+                    Preço&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col">
+                    Estoque&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </th>
+            </tr>
+            <tr>
+                <td>Notebook Gamer</td>
+                <td>Informática</td>
+                <td>R$ 5.200</td>
+                <td>15 Unidades</td>
+            </tr>
+            <tr>
+                <td>Smartphone X</td>
+                <td>Telefonia</td>
+                <td>R$3.100</td>
+                <td>30 unidades</td>
+            </tr>
+            <tr>
+                <td colspan="3">Total de Produtos</td>
+                <td> 45 Unidades</td>
+            </tr>
+        </table>
+        <font face="arial" color="#213a63">
+            <h2>2. Mesclando Células com rowspan e colspan.</h2>
+        </font>
+        <table border="1">
+            <tr>
+                <th rowspan="2">Produtos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <th colspan="2">Detalhes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <th>Preço&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <th>Estoque&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Impressora</td>
+                <td>R$750</td>
+                <td>22 Unidades</td>
+            </tr>
+        </table>
+        <font face="arial" color="#213a63">
+            <h2>3. Agrupamento de Cabeçalhos com scope.</h2>
+        </font>
+        <table border="1">
+            <tr>
+                <th scope="col"> Produto&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col"> Preço&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col"> Estoque&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+            <tr>
+                <th scope="row">Mouse</th>
+                <td>R$50</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th scope="row">Teclado</th>
+                <td>R$80</td>
+                <td>90</td>
+            </tr>
+        </table>
+
+        <font face="arial" color="#213a63">
+            <h2>4. Tabelas Aninhadas</h2>
+        </font>
+        <table border="1">
+            <tr>
+                <th scope="col">Departamento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th scope="col">Equipe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+            <tr>
+                <td>TI</td>
+                <td>
+                    <table border="1" style="margin: 10px;">
+                        <tr>
+                            <th scope="col">Nome&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                            <th scope="col">Cargo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                        </tr>
+                        <tr>
+                            <td>João</td>
+                            <td>Desenvolvedor</td>
+                        </tr>
+                        <tr>
+                            <td>Ana</td>
+                            <td>Analista</td>
+                        </tr>
+                    </table>
+
+                        </tr>
+                    </table>
+                </td>
+
+            </tr>
+        </table>
+    </font>
+
+</body>
+
+</html>

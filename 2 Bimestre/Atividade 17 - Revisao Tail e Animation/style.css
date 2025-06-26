@@ -1,0 +1,18 @@
+.carro{
+    width: 500px;
+    position: relative;
+    animation-name: carro;
+    animation-duration: 5s;
+}
+
+@keyframes carro{
+    0% {
+         transform: translateX(0);
+    }
+    70% {
+        transform: translateX(-100vh);
+    }
+    100% {
+        transform: translateX(-100vh) rotate(-40deg);
+    }
+}

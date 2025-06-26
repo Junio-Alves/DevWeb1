@@ -1,0 +1,76 @@
+body {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('assets/pngegg (1).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.container{
+    animation-name: fadeIn;
+    animation-duration: 4s;
+}
+
+.title{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 30px;
+    color: grey;
+    text-align: center;
+}
+
+.login{
+    z-index: 2;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-items: center;
+    align-items: center;
+  
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: rotate(-180deg);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.login input{
+    font-size: 20px;
+    outline: none;
+    margin-top: 30px;
+    padding: 10px;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid black;
+}
+
+.login button{
+    margin-top: 50px;
+    width: 30%;
+    padding: 10px;
+}

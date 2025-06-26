@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    overflow: hidden; /* Para garantir que o movimento não crie barras de rolagem */
+}
+
+.caixa-animada {
+    width: 100px;
+    height: 100px;
+    background-color: dodgerblue;
+    border-radius: 10px;
+    position: relative; /* Importante para 'transform' e 'left' funcionarem em relação a um ponto */
+
+    /* Aplicação da animação */
+    animation-name: moverCor; /* O nome que demos aos keyframes */
+    animation-duration: 10s; /* A animação dura 4 segundos */
+    animation-timing-function: ease-in-out; /* Começa e termina devagar, rápido no meio */
+    animation-iteration-count: infinite; /* Repete infinitamente */
+    animation-direction: alternate; /* Alterna a direção a cada repetição (ida e volta) */
+}
+
+/* Definição dos keyframes */
+@keyframes moverCor {
+  0% {
+    background-color: dodgerblue;
+    transform: translateX(-200px); /* Começa 200px à esquerda do centro */
+  }
+  25% {
+    background-color: yellowgreen;
+    transform: translateX(0); /* Volta para o centro */
+  }
+  50% {
+    background-color: tomato;
+    transform: translateX(200px); /* Vai 200px à direita do centro */
+  }
+  75% {
+    background-color: purple;
+    transform: translateX(0); /* Volta para o centro */
+  }
+  100% {
+    background-color: dodgerblue;
+    transform: translateX(-200px); /* Volta para a posição inicial */
+  }
+}

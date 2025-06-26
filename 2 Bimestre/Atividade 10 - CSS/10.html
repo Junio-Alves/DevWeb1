@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade CSS - Formulário</title>
+    <link rel="stylesheet" href="10.css">
+</head>
+
+<body>
+    <header>
+        <div>SELETIV@</div>
+    </header>
+    <div class="container">
+        <div class="form-card">
+            <div class="title">Nova empresa</div>
+            <hr>
+            <section class="form-row">
+                <div class="form-group">
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" placeholder="Digite seu nome..." name="nome" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" placeholder="email@gmail.com" name="nome" id="nome">
+                </div>
+            </section>
+            <section class="form-row">
+                <div class="form-group">
+                    <label for="nome">Cidade:</label><br>
+                    <input type="text" placeholder="Digite a cidade da empresa..." name="nome" id="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">Endereço:</label><br>
+                    <input type="email" placeholder="Rua..." name="nome" id="nome">
+                </div>
+            </section>
+            <div class="form-group full-width">
+                <label for="email">Nicho de mercado:</label><br>
+                <input type="text" name="nome" id="nome">
+            </div>
+            <div class="form-group full-width">
+                <label for="email">Tecnologias usadas:</label><br>
+                <input type="text" name="nome" id="nome" style="height: 100px;">
+            </div>
+            <div class="form-group full-width">
+                <label for="email">Característa da empresa:</label><br>
+                <textarea type="text" name="nome" id="nome" style="height: 100px;"></textarea>
+            </div>
+            <div class="form-group full-width">
+                    <label for="logo">Logo:</label>
+                    <div class="file-input-wrapper">
+                        <input type="file" id="logo" name="logo" class="input-file">
+                        <label for="logo" class="file-label">Escolher arquivo</label>
+                        <span class="file-name">Nenhum arquivo escolhido</span>
+                    </div>
+                </div>
+                <button type="submit" class="button">Nova Empresa</button>
+        </div>
+</body>
+
+</html>

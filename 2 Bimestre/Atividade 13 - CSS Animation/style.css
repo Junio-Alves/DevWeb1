@@ -1,0 +1,73 @@
+body{
+    display: flex;;
+    background-color: #ea3d41;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.morango{
+    display: flex;;
+    align-items: flex-start;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    justify-content: center;
+}
+
+.morango img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation-name: morango-img;
+    animation-duration: 3s;
+    animation-fill-mode: forwards; 
+    top: 0;
+    left: 0;
+}
+
+@keyframes morango-img {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+.morango-text{
+    position: absolute;
+    color: white;
+    top: 50%;
+    font-size: 200px;
+    font-weight: bold;
+    z-index: 2;
+    animation-name: morango-text;
+    animation-duration: 3s;
+}
+
+@keyframes morango-text {
+    0% {opacity: 0;}
+    100% { opacity: 1; }
+}
+
+.refri{
+    display: flex;;
+    align-items: flex-start;
+    position: absolute;
+    z-index: 3;
+    top: 15vw;
+}
+.refri img{
+    display: block;
+    width: 40vw;
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    animation-name: refri-img;
+    animation-duration: 4s;
+}
+
+@keyframes refri-img {
+    0% { transform: translateY(100%); }
+    100% { transform: translateY(0); }
+}
+
+

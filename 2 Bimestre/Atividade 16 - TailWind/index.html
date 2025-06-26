@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 14</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <header class="bg-blue-800 w-full flex items-center justify-center text-white text-2xl font-bold py-4">
+        <h1>Formulários de Cadastro</h1>
+    </header>
+    <div class="flex flex-col flex-grow w-3/5 ">
+        <div class="text-blue-600 font-bold my-10 text-center">Entre em Contato</div>
+        <div class="flex flex-col bg-white p-10 shadow-md rounded-lg">
+            <form>
+                <div class="flex flex-row">
+                        <div class="flex-1 mb-4 mr-3">
+                            <label>Nome</label><br>
+                            <input class="shadow-sm appearance-none  w-full p-2" type="text" placeholder="Seu nome completo">
+                        </div>
+                        <div class="flex-1">
+                            <label>Email</label><br>
+                            <input class="shadow-sm appearance-none  w-full p-2" type="email" placeholder="seu@email.com">
+                        </div>
+                </div>
+                <div class="w-full">
+                     <label>Mensagem</label><br>
+                     <textarea class="w-full shadow-sm" placeholder="Escreva sua Mensagem..." rows="5"></textarea>
+                </div>
+                <div class="flex items-center justify-center mt-5">
+                    <button class="bg-blue-600 p-3 rounded-lg text-white font-bold">Enviar Mensagem</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="text-blue-600 text-2xl font-bold my-10 text-center">Nossos Serviços</div>
+    <div class="flex flex-row justify-center w-4/5 mb-10 ">
+        <div class="flex flex-col w-3/9 bg-white p-5 m-5 rounded-lg shadow-md">
+            <h2 class="text-blue-600 text-start font-bold">Frontend</h2>
+            <p>Criamos interfaces modernas com HTML,CSS,JS,Tailwind e React</p>
+        </div>
+        <div class="flex flex-col w-3/9 bg-white p-5  m-5 rounded-lg shadow-md">
+            <h2 class="text-blue-600 text-start font-bold">Backend</h2>
+            <p>APIs escaláveis com Node.js, Django e banco de dados eficientes.</p>
+        </div>
+        <div class="flex flex-col w-3/9 bg-white p-5  m-5 rounded-lg shadow-md">
+            <h2 class="text-blue-600 text-start font-bold">Mobile</h2>
+            <p>Desenvolvimento mobile com Flutter, React,Native e PWA.</p>
+        </div>
+    </div>
+    <footer class="bg-blue-600 w-full flex items-center justify-center text-white py-5">
+        <div>&copy; 2025 - Formulários com Tailwind CSS</div>
+    </footer>
+</body>
+</html>
