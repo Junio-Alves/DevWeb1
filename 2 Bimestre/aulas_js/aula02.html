@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="formulario">
+        Valor 01 <input type="text" id="n1"><br>
+        Valor 02 <input type="text" id="n2"><br>
+        <select id="op">
+            <option value=0> 
+                +
+            </option>
+              <option value=1> 
+                -
+            </option>
+              <option value=2> 
+                *
+            </option>
+        </select>
+    </form>
+    <div id="result">
+        Resultado: 
+    </div><br>
+    <div id="rand">
+        Valor:  
+    </div>
+    <button onclick="Soma()" > Somar </button><br>
+    <button onclick="Multi()" > Imagem </button>
+    <img id='imagem01' src="img/imagem.png" width="20%">
+
+    <script>
+        function Soma( ){ 
+           let valor1 =parseFloat(document.formulario.n1.value)
+           let valor2 = parseFloat(document.formulario.n2.value)
+           document.getElementById('result').innerHTML = "Resultado:<font color=red> </b>" + (valor1 + valor2) 
+        }    
+        function Multi(){
+            document.getElementById('imagem01').src = "img/imagem1.png";
+            let numero = Math.floor(Math.random() * 100);
+            document.getElementById('rand').innerHTML = "Valor:" + (numero)
+        }
+    </script>
+</body>
+</html>

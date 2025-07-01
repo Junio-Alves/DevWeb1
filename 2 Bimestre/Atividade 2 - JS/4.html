@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+    <style>
+        body {
+            margin-top: 30px;
+            margin-left: 30px;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .tabuada {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .input-container {
+            margin-top: 20px
+        }
+        .input-container button {
+            background-color: green;
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Cálculo de Fatorial</div>
+    <div class="description"> Escreva um número (entre 1 e 21) na caixa a seguir e te mostrarei o Fatorial dele.</div>
+    <div class="input-container">
+        <label>Número:</label>
+        <input type="number" id="numero">
+        <button onclick="mostrarFatorial()">Fatorial</button>
+    </div>
+    <div style="margin-top: 20px;">Preencha os dados acima e aperte o botão.</div>
+    <p id="resultado"></p>
+    <script>
+        function mostrarFatorial() {
+            const numero = document.getElementById('numero').value;
+            if (numero < 1 || numero > 21) {
+                document.getElementById('resultado').innerHTML = "Por favor, digite um número entre 1 e 21.";
+            } else {
+                let fatorialNumeros = "";
+                let fatorial = 1;
+                for (let i = numero ; i > 0; i--) {
+                    console.log(i);
+                    if (i === 1){
+                        fatorialNumeros += `${i}`;
+                    } else {
+                        fatorialNumeros += `${i} x `;
+                    }
+                    fatorial *= i;
+                    console.log(fatorial);
+                }
+                document.getElementById('resultado').innerHTML = "<div class='tabuada'>Fatorial do " + numero + "</div><br>" + fatorialNumeros + "= " + fatorial;
+            }
+        }
+    </script>
+    
+</body>
+</html>

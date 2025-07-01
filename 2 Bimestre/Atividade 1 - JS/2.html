@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2</title>
+    <style>
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body style="justify-content: center; align-items: center; display: flex; height: 100vh; flex-direction: column;">
+    <script>
+        const date = new Date();
+        const dataPorExtenso = date.toLocaleDateString('pt-BR', {
+            day: '2-digit',
+            month: 'long',
+            year: 'numeric'
+        });
+        document.write(`<p>${dataPorExtenso}</p>`);
+    </script>
+</body>
+</html>

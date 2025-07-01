@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Estacionamento IF</title>
+  <style>
+    img{
+      width: 40%;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align: center;">Sistema de Estacionamento - IF</h1>
+
+  <div style="display: flex; justify-content: center;">
+    <table width="70%" style="text-align: center;" border="1">
+      <tr>
+        <td><img id="carro1" src="assets/carro_blue_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro2" src="assets/carro_blue_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro3" src="assets/carro_red_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro4" src="assets/carro_blue_2.png" onclick="trocarCor(this)"></td>
+      </tr>
+      <tr>
+        <td><img id="carro5" src="assets/carro_red_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro6" src="assets/carro_blue_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro7" src="assets/carro_red_2.png" onclick="trocarCor(this)"></td>
+        <td><img id="carro8" src="assets/carro_blue_2.png" onclick="trocarCor(this)"></td>
+      </tr>
+    </table>
+  </div>
+
+  <p style="text-align: center;">&copy;Sistema IF - PHB 2018</p>
+
+  <script>
+    function trocarCor(img) {
+      img.src.includes("red") ? img.src = "assets/carro_blue_2.png" : img.src = "assets/carro_red_2.png";
+    }
+  </script>
+</body>
+</html>

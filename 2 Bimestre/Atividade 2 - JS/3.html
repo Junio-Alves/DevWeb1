@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <style>
+        body {
+            margin: 5%
+        }
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .resultado {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        button {
+            margin: 20px 0px 20px 0px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Contando de 1 a 10 (mostrando só os pares)</div>
+    <button onclick="contarPares()">Contar de 1 a 10</button>
+    <div>Aperte o botão acima para contar</div>
+    <p id="resultado"></p>
+    <script>
+        function contarPares(){
+            let resultado = "";
+            for (let i = 1; i <= 10; i++) {
+                if (i % 2 === 0 && i !== 10) {
+                    resultado += `${i} 👉 `;
+                } else if (i === 10) {
+                    resultado += `${i} 🏁`;
+                }
+            }
+            document.getElementById('resultado').innerHTML = "<div class='resultado'>Números pares de 1 a 10</div> <br>" +  resultado;
+        }
+    </script>
+</body>
+</html>

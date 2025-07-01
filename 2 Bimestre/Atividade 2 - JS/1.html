@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+    <style>
+        .title {
+            font-size: 30px;
+            font-weight: bold;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin-bottom: 20px;
+        }
+        .button {
+            padding: 30px
+        }
+        #mes{
+            background-color: yellow;
+        } 
+        #estacao{
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Descubra a estação do ano</div>
+    <button class="button" onclick="mostrarEstacao()">Informe o mês</button>
+    <p id="resultado"></p>
+    <script>
+        function calcularEstacao(mes){
+            if (mes === 'setembro' || mes === 'outubro' || mes === 'novembro') {
+                return 'outono';
+            } else if (mes === 'dezembro' || mes === 'janeiro' || mes === 'fevereiro') {
+                return 'inverno';
+            } else if (mes === 'março' || mes === 'abril' || mes === 'maio') {
+                return 'primavera';
+            } else if (mes === 'junho' || mes === 'julho' || mes === 'agosto') {
+                return 'verão';
+            } else {
+                return 'mês inválido';
+            }
+        }
+        function mostrarEstacao() {
+            const mes = prompt('Digite o mês por extenso (ex: Setembro):');
+            if (mes !== null && mes.trim() !== '') {
+                const estacao = calcularEstacao(mes.toLowerCase());
+                if (estacao === 'mês inválido') {
+                    document.getElementById('resultado').innerHTML = `<span style="color: red;">Mês "${mes}" não reconhecido. Digite um mês válido.</span>`;
+                } else {
+                    document.getElementById('resultado').innerHTML = `No mês de <span id="mes">${mes}</span> estamos na estação de <span id="estacao">${estacao}</span>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

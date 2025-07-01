@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1</title>
+</head>
+<body style="justify-content: center; align-items: center; display: flex; height: 100vh; flex-direction: column;">
+    <script>
+        let input = prompt("Digite um número: ");
+        let numero = parseInt(input);
+        let contador = 0;
+        while (contador < 10){
+            if (numero % 2 == 0){
+                document.write(`<p>${numero}</p>`);
+                contador++;
+            } 
+            numero++;
+        }
+    </script>
+</body>
+</html>

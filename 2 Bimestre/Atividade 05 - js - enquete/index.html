@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 5</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Prova Prática - Enquete</div>
+        <fieldset class="enquete">
+            <legend>Enquete</legend>
+            <div>1- Qual linguagem de programação você mais gosta?</div>
+            <input type="radio" name="linguagem" value="python">Python<br>
+            <input type="radio" name="linguagem" value="php">PHP<br>
+            <input type="radio" name="linguagem" value="java">Java<br>
+            <input type="radio" name="linguagem" value="cpp">C++<br>
+            <button onclick="votar()">Votar</button>
+        </fieldset>
+        <hr>
+        <fieldset class="resultado">
+            <legend>Resultado</legend>
+            <div id="resultado"></div>
+        </fieldset>
+    </div>
+    <script src="script.js"></script>
+    <footer>&copy Sistema de Enquete - IFPI 2025</footer>
+    <hr>
+</body>
+</html>

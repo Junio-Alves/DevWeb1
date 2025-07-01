@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3</title>
+    <style>
+        .title{
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .resultadoTitle{
+            font-size: 20px;
+        }
+        .resultado {
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="title">Jogo do Acerto</div>
+    Digite um número entre 1 a 20<input type="number" id="numero"><br>
+    <button onclick="verificar()">Verificar</button>
+    <div id="resultado"></div>
+    
+    <script>
+        function verificar() {
+            const numero = parseInt(document.getElementById("numero").value);
+            if(numero < 1 || numero > 20 || isNaN(numero)){
+                alert("Número inválido");
+                return;
+            }
+            let resultado = "<fieldset><legend>Resultado</legend><br>";
+            let lista = [];
+            for (let i = 0; i < 5; i++) {
+                lista.push(Math.floor(Math.random() * 21) + 1);
+            }
+            if (lista.includes(numero)) {
+                resultado += "<div class='resultado' style='color: blue;'>Você acertou!</div><br>"
+            } else{
+                resultado += "<div class='resultado' style='color: red;'>Você errou!</div><br>"
+            }
+            resultado += `<div style='font-size: 20px;'>Números Digitados: ${numero} </div><br>
+                          <div style='font-size: 20px;'>Números Sorteados: ${lista}</div></fieldset>`	;
+            document.getElementById("resultado").innerHTML = resultado
+        }
+    </script>
+    
+</body>
+</html>

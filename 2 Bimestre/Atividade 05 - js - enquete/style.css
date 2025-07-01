@@ -1,0 +1,27 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 50%;
+}
+.title {
+    width: 100%;
+    background-color: grey;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+}
+.enquete{
+    width: 96%;
+}
+.resultado{
+    width: 96%;
+}

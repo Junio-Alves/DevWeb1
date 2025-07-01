@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Aula JS - Cadastro</h2>
+    <script>
+        a = 1.5
+        b = 'abbb' 
+        //alert('O valor de a é: ' + b )
+        // console.log('O valor de a é: ' + a)
+        /*
+        document.write('O valor de a é: <b>' + a + " </b><br>")
+        document.write('<font color=red> Valor Correto </font><br>')
+        let valor1 = parseFloat(prompt("Digite um valor"))
+        let resultado = valor1 + 2
+        document.write('O multiplo do valor digitado é : <b>' + resultado + " </b><br>")
+        if(valor1 >= 18  ) {
+           document.write('<font color=blue>')
+           document.write("Maior de idade </font>")
+        }else {
+           document.write('<font color=red>')
+           document.write("Menor de idade </font>")
+        }
+        */
+        cor =[null,'blue','red','green','yellow', 'gray','purple']
+        for(i=1; i<=6; i++){    
+          document.write('<h'+i+'><font color=' + cor[i]  +'>Exame de Vista JS</font></h'+i+'>')
+        }
+        a = 10
+        while(a <= 20){
+            if(a % 2 == 1)
+            document.write('Valor de a é' + a + "<br>")
+            a=a + 1 // a++
+        }
+    </script>
+
+    
+</body>
+</html>

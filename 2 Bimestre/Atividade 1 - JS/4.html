@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4</title>
+    <style>
+        p{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body style="justify-content: center; align-items: center; display: flex; height: 100vh; flex-direction: column;">
+    <script>
+        let input = prompt("Digite a expressão:");
+        let resultado = 0;
+        try{
+            resultado = eval(input);
+            document.write(`<p>${resultado}</p>`);
+        }catch(error){
+            document.write(`<p>Erro! Expressão inválida.</p>`);
+        }
+    </script>
+    
+</body>
+</html>
