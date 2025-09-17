@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Estudo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header class="bg-blue-600 flex items-center justify-between ">
+        <h1 class="text-white text-2xl p-10 font-bold">Meu Primeiro  Site com Tailwind</h1>
+        <nav class="mr-20 text-white" >
+            <ul>
+                <a class="px-3" href="#">Home</a>
+                <a  class="px-3"href="#">Sobre</a>
+                <a  class="px-3" href="#">Contato</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-1 flex flex-col">
+        <section class="flex items-stretch justify-center mt-10 flex-row gap-10 w-full max-w-full px-10">
+            <div id="iphone1" onclick="girarIphone(this)" class="flex w-96 h-96 flex-col items-center justify-center  shadow-sm rounded-lg p-8 bg-white">
+                <img src="assets/iphone.png" class="w-64 object-contain mb-4">
+                <h2 class="text-xl font-semibold mb-2">Iphone</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                </script>
+            </div>
+            <div id="iphone2" onclick="girarIphone(this)"  class="flex w-96 h-96 flex-col items-center justify-center  shadow-sm rounded-lg p-8 bg-white">
+                <img src="assets/iphone.png" class="w-64 object-contain mb-4">
+                <h2 class="text-xl font-semibold mb-2">Iphone</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+            </div>
+        </section>
+        <script>
+            function girarIphone(iphone) {
+                iphone.classList.add('animate-spin');
+            }
+        </script>
+    </main>
+        <footer class="bg-blue-600 mt-10 flex items-center justify-center w-full">
+             <div class="text-white w-full text-center py-6"> &copy; 2025 Meu Primeiro Site com Tailwind</div>
+        </footer>
+    
+
+</body>
+</html>

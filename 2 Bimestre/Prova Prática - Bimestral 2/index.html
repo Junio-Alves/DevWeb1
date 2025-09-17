@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova Pratica - Bimestral 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .animar{
+            animation: move 0.7s linear;
+        }
+
+        .title {
+            animation: oscilar 5s infinite;
+        }
+
+        @keyframes oscilar{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 1;
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+
+        @keyframes move{
+            0%{
+                transform: translateX(0%);
+            }
+            100%{
+                transform: translateX(40vw);
+            }
+        }
+        .hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-bl from-teal-500 to-purple-500 flex justify-center items-center h-screen flex-col">
+    <div class="text-white text-3xl font-bold opacity-50 title">🚗Calculadora de Viagem</div>
+    <div class="w-1/2 bg-white h-20 mt-5 rounded-lg  items-center flex shadow-md">
+        <img id="carro" class="ml-4" src="assets\carro.png">
+    </div>
+    <div class="w-1/3 bg-white mt-5 rounded-lg  items-center fle flex-col shadow-md">
+        <form class="p-5">
+            <label class="font-bold">Preço da gasolina (R$/L)</label><br>
+            <input class="border-1 border-gray-300 rounded-md p-2 w-full" id="precoGasolina"><br>
+            <label class="font-bold">Distância (km)</label><br>
+            <input class="border-1 border-gray-300 rounded-md p-2 w-full" id="distancia"><br>
+            <label class="font-bold">Consumo (km/L)</label><br>
+            <input class="border-1 border-gray-300 rounded-md p-2 px-4 w-full" id="consumo"><br>
+            <button 
+                onclick="calcular()" 
+                class="bg-purple-600 px-5 mt-5 font-bold text-white rounded-md p-2 hover:bg-purple-800 hover:scale-102" 
+                type="button"
+            >Calcular</button>
+        </form>
+    </div>
+    <div class="bg-white mt-5 rounded-lg  items-center fle flex-col p-3 hidden shadow-md" id="resultado">
+        <div class="font-semibold">🚘 Litros necessários:<span class="font-bold" id="litros"></span></div>
+        <div class="font-semibold">💰 Custo estimado:<span class="font-bold" id="custo"></span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

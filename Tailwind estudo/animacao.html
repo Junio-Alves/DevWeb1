@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animacao</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      .animar{
+        animation: move 5s;
+      }
+      @keyframes move{
+        0%{
+            transform: translateX(0%);
+        }
+        100%{
+            transform: translateX(100%);
+        }
+      }
+    </style>
+</head>
+<body>
+    <div class="flex items-center justify-center w-full h-screen flex-col">
+    <header class="flex items-center justify-center w-full bg-blue-600 text-white text-4xl py-10 font-bold">
+        <h1>Teste Animação</h1>
+    </header>
+    <div class="flex items-center justify-start w-full h-screen">
+        <img class="w-1/6"  src="assets/carro.jpg" id="carro">
+    </div>
+    <button class="bg-gray-300 p-5 mt-10" onclick="moveCarro()">Move</button> 
+    <script>
+        function moveCarro(){
+            const carro = document.getElementById('carro');
+            carro.classList.remove('animar');
+            carro.offsetWidth;
+            carro.classList.add('animar');
+        }
+    </script>
+    </div>
+</body>
+</html>
